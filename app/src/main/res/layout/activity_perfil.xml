@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BotaoSalvar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f322"
+    android:saveEnabled="true"
+    tools:context="com.example.AppMoviment.PerfilActivity">
+
+    <TextView
+        android:id="@+id/TelaPerfil"
+        android:layout_width="196dp"
+        android:layout_height="37dp"
+        android:text="Perfil Do Usuario"
+        android:textColor="#CCE3E6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="124dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_NOME">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" SEXO"
+            android:textColor="#EDDCDC"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_masc"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="MASC."
+            android:textAllCaps="false"
+            android:textColor="#BAA6A6"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_fem"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="FEM"
+            android:textColor="#B89F9F"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_Outros"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="OUTROS"
+            android:textColor="#AF9D9D"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="99dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupSex"
+        app:layout_constraintTop_toBottomOf="@+id/editText_NOME">
+
+        <EditText
+            android:id="@+id/text_KG"
+            android:layout_width="94dp"
+            android:layout_height="62dp"
+            android:hint="kg" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView_altu">
+
+        <EditText
+            android:id="@+id/text_MTS"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:hint="mts" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_Nasc"
+        android:layout_width="188dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/nasci"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSex" />
+
+    <Button
+        android:id="@+id/button_salvar_dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:text="@string/salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Date_edit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textDigite_nome"
+        android:layout_width="205dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/Qual_Seu_Nome"
+        android:textColor="#C8BDBD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupSex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelaPerfil"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/editText_NOME"
+        android:layout_width="212dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#CFAEAE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDigite_nome" />
+
+    <TextView
+        android:id="@+id/textView_altu"
+        android:layout_width="85dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="44dp"
+        android:text=" ALTURA"
+        android:textColor="#EDDCDC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/textViewPeso"
+        app:layout_constraintTop_toBottomOf="@+id/editText_NOME" />
+
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="102dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:text=" PESO"
+        android:textColor="#EDDCDC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupSex" />
+
+    <EditText
+        android:id="@+id/Date_edit"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="284dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Nasc"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_SHOW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.699"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="150dp"
+        android:layout_height="79dp"
+        android:background="#6294B5"
+        android:textColor="#08085E"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_altu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText_NOME"
+        app:layout_constraintTop_toBottomOf="@+id/TelaPerfil"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="93dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_SHOW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toEndOf="@+id/Date_edit"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintVertical_bias="0.62"
+        app:srcCompat="@drawable/corrida__1_" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

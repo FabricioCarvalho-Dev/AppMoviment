@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_txt">AppMoviment</string>
+    <string name="monitor_txt">Navigation</string>
+    <string name="historico_txt">Historic</string>
+    <string name="configuracoes_txt">Settings</string>
+    <string name="creditos_txt">Credits</string>
+    <string name="caminhada_txt">Decimal Degree</string>
+    <string name="corrida_txt">Degree-Minute Decimal</string>
+    <string name="bicicleta_txt">Degree-Minute-Second Decimal</string>
+    <string name="kmh_txt">Km/h (Kilometer per hour)</string>
+    <string name="mph_txt">Mph (Miles per hour)</string>
+    <string name="tipoExercicios_txt">Geographical coordinates format</string>
+    <string name="uniVelocidade_txt">Speed ​​display unit</string>
+    <string name="orientacaoMapa_txt">Map Orientation</string>
+    <string name="orientacaoNenhuma_txt">None</string>
+    <string name="orientacaoNorteCima_txt">North Up</string>
+    <string name="orientacaoCursoCima_txt">Course Up</string>
+    <string name="tipoMapa_txt">Map Type</string>
+    <string name="vetorial_txt">Vector</string>
+    <string name="imagemSatelite_txt">Satellite Image</string>
+    <string name="inforcacao_trafego_txt">Traffic Information</string>
+    <string name="inicio_txt">Home</string>
+    <string name="perfil">perfil</string>
+    <string name="Perfil_text">Perfil</string>
+    <string name="perfil_txt">perfil</string>
+    <string name="subTexto">Monitor your quality of life</string>
+    <string name="Monitore_sua_qualidadede_vida">Monitor your quality of life</string>
+    <string name="Qual_Seu_Nome">What is Your Name?</string>
+    <string name="salvar">save</string>
+    <string name="nasci">birth date</string>
+
+
+
+
+</resources>
